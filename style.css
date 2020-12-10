@@ -79,6 +79,7 @@ li {
 
 .logo {
     text-align: center;
+    z-index: 10;
 }
 
 .logo > img {
@@ -159,7 +160,7 @@ li {
         z-index: 10;
     }
 
-    .hamburger {
+    .navigation .hamburger {
         position: absolute;
         top: 25px;
         right: 30px;
@@ -208,10 +209,11 @@ li {
     top: 40%;
     left: 10%;
     width: 30%;
+    z-index: 10;
 }
 
 .under-text {
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 8%;
 }
 
@@ -303,7 +305,9 @@ footer {
         width: 100%;
     }
 
-    .br-sp {display: none; }
+    .br-sp {
+        display: none;
+    }
 
     .logo {
         position: absolute;
@@ -322,5 +326,6 @@ footer {
         top: auto;
         right: -60px !important;
         bottom: -49px !important;
+        z-index: 10;
     }
 }

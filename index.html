@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Box icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>American Village</title>
 </head>
 
@@ -50,31 +52,75 @@
 
             </div>
         </nav>
+    </header>
 
 
-        <main>
-            <!-- pictureタグを使うと簡単にレスポンシブ対応を使用できる -->
-            <div class="container">
+    <main>
+        <!-- pictureタグを使うと簡単にレスポンシブ対応を使用できる -->
+        <div class="container">
 
-                <div class="img-box">
-                    <div class="logo">
-                        <img src="img/logo.png" alt="">
-                    </div>
-                    <picture class="main-photo">
-                        <source srcset="img/visual_1_sp.png" media="(max-width: 767px)" />
-                        <img src="img/visual_1_pc.png" alt="アメリカンビレッジの夜景写真" />
-                    </picture>
-                    <picture class="sign-logo">
-                        <source srcset="img/visual_text_sp.png" media="(max-width: 767px)" />
-                        <img src="img/visual_text_pc.png" alt="アメリカンビレッジのサインロゴ" />
-                    </picture>
-
+            <div class="img-box">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
                 </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture class="main-photo">
+                                <source srcset="img/visual_1_sp.png" media="(max-width: 767px)" />
+                                <img src="img/visual_1_pc.png" alt="アメリカンビレッジの夜景写真" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="main-photo">
+                                <source srcset="img/visual_2_sp.png" media="(max-width: 767px)" />
+                                <img src="img/visual_2_pc.png" alt="アメリカンビレッジの夜景写真" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="main-photo">
+                                <source srcset="img/visual_3_sp.png" media="(max-width: 767px)" />
+                                <img src="img/visual_3_pc.png" alt="アメリカンビレッジの夜景写真" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="main-photo">
+                                <source srcset="img/visual_4_sp.png" media="(max-width: 767px)" />
+                                <img src="img/visual_4_pc.png" alt="アメリカンビレッジの夜景写真" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="main-photo">
+                                <source srcset="img/visual_5_sp.png" media="(max-width: 767px)" />
+                                <img src="img/visual_5_pc.png" alt="アメリカンビレッジの夜景写真" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="main-photo">
+                                <source srcset="img/visual_6_sp.png" media="(max-width: 767px)" />
+                                <img src="img/visual_6_pc.png" alt="アメリカンビレッジの夜景写真" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="main-photo">
+                                <source srcset="img/visual_7_sp.png" media="(max-width: 767px)" />
+                                <img src="img/visual_7_pc.png" alt="アメリカンビレッジの夜景写真" />
+                            </picture>
+                        </div>
+
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <picture class="sign-logo">
+                    <source srcset="img/visual_text_sp.png" media="(max-width: 767px)" />
+                    <img src="img/visual_text_pc.png" alt="アメリカンビレッジのサインロゴ" />
+                </picture>
+
             </div>
             <div class="under-text">
                 <p>進化し続ける「街」<br class="br-sp">アメリカンビレッジマガジン</p>
             </div>
-
 
             <!-- blog -->
             <section class="section">
@@ -144,16 +190,17 @@
             </section>
 
 
-        </main>
+    </main>
 
-        <footer id="footer" class="footer">
-            <div>
-                <h1>Copyright(C)Shinohara.ALL RIGHTS RESERVED</h1>
-            </div>
+    <footer id="footer" class="footer">
+        <div>
+            <h1>Copyright(C)Shinohara.ALL RIGHTS RESERVED</h1>
+        </div>
 
-        </footer>
-
-        <script src="js/main.js"></script>
+    </footer>
+    <!-- Swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
